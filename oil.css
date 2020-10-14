@@ -122,9 +122,8 @@ body{
 
 /* Clear floats after the columns */
 .row:after {
-    content: "";
     display: inline-block;
-    list-style-image:;
+    list-style-image: ;
     clear: both;
 }
 
