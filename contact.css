@@ -1,0 +1,94 @@
+@charset "uft-8";
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.nav{
+    width:100%;
+    height: 128px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar{
+    width: inherit;
+    height: inherit;
+    text-align: right;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.nav-itm{
+    height: inherit;
+    display: inline-block;
+    list-style: none;
+    line-height: 128px;
+    margin-top:5px;
+    margin-left: 16px;
+}
+.nav-link{
+    display:inline-block;
+    color:#000;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+.nav-img{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    float: right;
+}
+.name{
+    margin-top: 20px;
+    float:left;
+    font-size: 20px;
+}
+.overall{
+    width:100%;
+    height: 800px;
+    background-image:url(../resources/oil-overall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.info-img{
+    width: 78px;
+    height: 78px;
+}
+.contact-overall h1{
+    color: black;
+}
+.contact-overall p{
+    color: black;
+}
+.contact-icons{
+    width:100%;
+    height: 128px;
+    padding: 0;
+    margin: 0;
+}
+.contact-itm{
+    height: inherit;
+    display: inline-block;
+    list-style: none;
+    line-height: 128px;
+    margin: 16px;
+}
+.contact-link{
+    display:inline-block;
+    color:#000;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+.contact-img{
+    width: 78px;
+    height: 78px;
+    display: inline-block;
+}
+.message{
+    margin-left: 30px;
+}

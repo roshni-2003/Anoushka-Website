@@ -1,0 +1,161 @@
+@charset "uft-8";
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.nav{
+    width:100%;
+    height: 128px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar{
+    width: inherit;
+    height: inherit;
+    text-align: right;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.nav-itm{
+    height: inherit;
+    display: inline-block;
+    list-style: none;
+    line-height: 128px;
+    margin-top:5px;
+    margin-left: 16px;
+}
+.nav-link{
+    display:inline-block;
+    color:#000;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+.nav-img{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    float: right;
+}
+.name{
+    margin-top: 20px;
+    float:left;
+    font-size: 20px;
+}
+.images{
+    width: inherit;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+.contact-overall h1{
+    color: black;
+}
+.contact-overall p{
+    color: black;
+}
+.contact-icons{
+    width:100%;
+    height: 128px;
+    padding: 0;
+    margin: 0;
+}
+.contact-itm{
+    height: inherit;
+    display: inline-block;
+    list-style: none;
+    line-height: 128px;
+    margin: 16px;
+}
+.contact-link{
+    display:inline-block;
+    color:#000;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+.contact-img{
+    width: 78px;
+    height: 78px;
+    display: inline-block;
+}
+.overall{
+    width:100%;
+    height: 100%;
+    background-image:url(../resources/oil-overall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.column {
+    float: left;
+    width: 25%;
+    display: inline-block;
+    list-style: none;
+    flex: 50%;
+    padding: 0 4px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: inline-block;
+    list-style-image:;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+    position: relative;
+    display: none;
+    height: min-content;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+.images{
+    display: inline-block;
+    list-style: none;
+    line-height: 128px;
+    margin: 16px;
+}
