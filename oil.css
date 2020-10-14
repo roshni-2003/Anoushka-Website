@@ -112,7 +112,7 @@ body{
 }
 
 .column img:hover {
-    opacity: 1;
+    opacity: 2;
 }
 .row{
     display: flex;
