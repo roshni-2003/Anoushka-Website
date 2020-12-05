@@ -52,10 +52,14 @@ body{
 }
 .images{
     width: inherit;
-    margin: 0;
     padding: 0;
     position: absolute;
     right: 0;
+    list-style: none;
+    float: right;
+    line-height: 128px;
+    margin-top:5px;
+    margin-left: 16px;
 }
 .contact-overall h1{
     color: black;
@@ -95,19 +99,22 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    list-style: none;
 }
 
-/*images by anoushka*/
+/*images by anoushka */
 .column {
     float: left;
     width: inherit;
     display: inline-block;
     list-style: inherit;
-    flex: 33.3%;
+
+    flex: 50%;
     padding: 0 4px;
+
 }
 
-/* Style the images inside the grid */
+/* Style the images inside the grid*/
 .column img {
     opacity: 0.8;
     cursor: pointer;
@@ -120,12 +127,11 @@ body{
 .column img:hover {
     opacity: 2;
 }
-
 .row {
     display: inline-block;
     flex-wrap: wrap;
-    padding: 0 1px;
-    height: 20px;
+    padding: 0 4px;
+    height: max-content;
     width: inherit;
 }
 
@@ -135,12 +141,18 @@ body{
     display: inline-block;
     list-style-image: unset;
     clear: both;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    height: 20px;
+    width: inherit;
 }
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
     position: relative;
     display: none;
+    height: max-content;
+    width: max-content;
 }
 
 /* Expanding image text */
@@ -162,8 +174,53 @@ body{
     cursor: pointer;
 }
 .images{
-    display: inline-block;
     list-style: none;
     line-height: 128px;
     margin: 16px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    float: right;
+}
+.button{
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    display: inline-block;
+    ;
+}
+.oil-overall{
+    height: max-content;
+    width: inherit;
+    contain: size;
+}
+.button-all{
+   /* width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.btn {*/
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 18px;
+    align-content: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.button.active {
+    background-color: #666;
+    color: white;
 }
