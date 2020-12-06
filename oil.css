@@ -102,16 +102,17 @@ body{
     list-style: none;
 }
 
-/*images by anoushka */
+/*images by anoushka*/
 .column {
     float: left;
     width: inherit;
     display: inline-block;
     list-style: inherit;
 
-    flex: 50%;
     padding: 0 4px;
 
+    box-sizing: content-box;
+    -ms-flex: 50%; /* IE 10 */
 }
 
 /* Style the images inside the grid*/
@@ -127,7 +128,7 @@ body{
 .column img:hover {
     opacity: 2;
 }
-.row {
+/*.row {
     display: inline-block;
     flex-wrap: wrap;
     padding: 0 4px;
@@ -135,6 +136,85 @@ body{
     width: inherit;
 }
 
+.column {
+    float: left;
+    width: inherit;
+    display: inline-block;
+    list-style: inherit;
+
+    flex: 50%;
+    padding: 0 4px;
+
+    box-sizing: content-box;
+}
+
+/* Style the images inside the grid
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    margin-top: 8px;
+    vertical-align: middle;
+}*/
+
+/*.row {
+    display: -ms-flexbox; /* IE 10
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other
+.column {
+    -ms-flex: 50%; /* IE 10
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+*/
+/* Style the buttons */
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: inherit;
+    align-content: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+.column img:hover {
+    opacity: 2;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -151,8 +231,8 @@ body{
 .container {
     position: relative;
     display: none;
-    height: max-content;
-    width: max-content;
+    height: 100%;
+    width: 100%;
 }
 
 /* Expanding image text */
@@ -182,45 +262,9 @@ body{
     display: inline-block;
     float: right;
 }
-.button{
-    height: 50px;
-    width: 50px;
-    align-items: center;
-    display: inline-block;
-    ;
-}
+
 .oil-overall{
     height: max-content;
     width: inherit;
     contain: size;
-}
-.button-all{
-   /* width: 50px;
-    height: 50px;
-    text-align: center;
-    align-content: center;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-.btn {*/
-    border: none;
-    outline: none;
-    padding: 10px 16px;
-    cursor: pointer;
-    font-size: 18px;
-    align-content: center;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.button:hover {
-    background-color: #ddd;
-}
-
-.button.active {
-    background-color: #666;
-    color: white;
 }
